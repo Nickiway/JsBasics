@@ -14,10 +14,10 @@ console.log(result);
 
 // * one more example 
 result =  0 ?? b;
-console.log(result);
+console.log(result); // 0 (as first argument)
 
 result =  0 || b;
-console.log(result);
+console.log(result); // 0 (as the first argument is false)
 
 // * one more example 
 let height = 0;

@@ -27,7 +27,7 @@ console.log(2 + 2 + '1'); // 41
 // ! HOWEVER
 console.log('1' + 2 + 2); // 122
 
-// ! IF WE USING '-' OPERANT WITH STRING => STRING CONVERTS TO NUMBER
+// ! IF WE USING '-' or '/' OPERANT WITH STRING => STRING CONVERTS TO NUMBER
 console.log('6' - 2); // 4
 console.log('12' / '4'); // 3
 

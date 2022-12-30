@@ -29,7 +29,7 @@ showMessageLocal(); // "Hello the World of Polska";
 // ! Outer variables 
 let userName = "John";
 
-// * we can call the local variable inside the function
+// * we can call the outer variable inside the function
 
 function outputName() {
     userName = "Bob";
@@ -84,7 +84,7 @@ function showMessageDefault(name="Username", surname="Nickname") {
 showMessageDefault();
 showMessageDefault("Nik", "Nickiway");
 showMessageDefault("Nik", undefined);
-showMessageDefault("Nik", null);
+showMessageDefault("Nik", null); // null != undefined (output : Nik null)
 
 // ! also can be used operator OR (||) or nullish coalescing operator (??)
 

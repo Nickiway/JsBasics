@@ -14,7 +14,7 @@ for (let index = 0; index < 3; index++) {
     console.log(i);    
 }
 
-// * also we can siplify the loop FOR 
+// * also we can symplify the loop FOR 
 // * instead we are using ; item
 i = 0;
 for(; i < 3; ) {
