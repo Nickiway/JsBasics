@@ -96,3 +96,29 @@ console.log(dog.getDogName()); // Arty
 //   user.sayHi(); // Ilya
 
 // * in this case we referencing outer object user
+function printCity() {
+    return this.city;
+}
+
+let users = {
+    age : 15,
+    name : "Marty",
+    city : "Warsaw",
+    family : true,
+    printAge() {
+        return this.age;
+    }, 
+    printName : function() {
+        return this.name;
+    },
+    printCitys : printCity,
+    hasFamily() {
+        let family = false; // is not used
+        let familys = () => this.family;
+        return familys();
+    } // using arrow with this but it return value of outer class
+}
+console.log(users.printAge()); // 15
+console.log(users.printName()); // Marty 
+console.log(users.printCitys()); // Warsaw
+console.log(users.hasFamily()); // Warsaw
