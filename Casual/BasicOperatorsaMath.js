@@ -55,9 +55,10 @@ console.log(a); // 3
 console.log(c); // 0
 
 a = b = c = 2 + 2;
-console.log(a); // 2
-console.log(b); // 2
-console.log(c); // 2
+console.log('-----------------');
+console.log(a); // 4
+console.log(b); // 4
+console.log(c); // 4
 
 // ? INCREMENT (POSTFIX, PREFIX)
 // ! WE CAN USE INCREMENT FOR VARIABLES ONLY

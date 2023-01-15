@@ -132,4 +132,4 @@ console.log(returnNonValue() === undefined); // true (undefined)
 // "check…" – check something and return a boolean, etc.
 
 // ! Remember 1 FUNCTION = 1 ACTION
-// * if the function getAge() we getting age there only 
+// * if the function getAge() we getting age there only  

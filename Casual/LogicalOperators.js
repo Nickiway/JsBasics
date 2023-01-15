@@ -46,7 +46,7 @@ let nickName = "Nickiway";
 console.log(firstName || lastName || nickName || "Anonymous"); 
 
 // * easier example 
-let result = true || "not printed"; // stops on the first true => not printed
+let result = true || "not printed"; // stops on the first true 
 result = false || "printed"; // passes first false => printed
 console.log(result);
 
