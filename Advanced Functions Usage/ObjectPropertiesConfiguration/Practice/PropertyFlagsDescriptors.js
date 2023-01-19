@@ -69,3 +69,30 @@ let cloneDescriptor = Object.getOwnPropertyDescriptors(clone);
 testingUser = null; // does not affect on clone object (not refereing on the 1 cell of memory)
 console.log(cloneDescriptor); // clone descriptor
 clone.printInfo(); // output works
+
+
+// usage of commands on setting the particular values for flags : 
+// Object.preventExtensions(obj) => obj (can  not ADD new property)
+// Object.seal(obj) => obj (can not ADD / DELETE property)
+// Object.freeze(obj) => obj (can not DELETE/ADD/REWRITE property)
+
+let newUser = {
+    name : "John",
+    age : 15
+};
+
+let newUserDescriptor = Object.getOwnPropertyDescriptors(newUser);
+console.log(newUserDescriptor); // descriptors
+
+// * 1
+// Object.preventExtensions(newUser);
+// newUser.state = "Orizona";
+// console.log(newUser); // Error : can not add property
+
+// * 2
+// Object.seal(newUser);
+// delete newUser.age; // Error : can not delete / add
+
+// * 3
+// Object.freeze(newUser);
+// newUser['age'] = 17; // Error : can not delete / add / rewrite (assign)
