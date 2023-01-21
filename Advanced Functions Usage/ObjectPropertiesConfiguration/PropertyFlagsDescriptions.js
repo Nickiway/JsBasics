@@ -1,7 +1,7 @@
 'use strict';
 // https://javascript.info/property-descriptors
 
-// objects beside value can have three special atributes (so-called 'flags') :
+// object's properties beside value can have three special atributes (so-called 'flags') :
 // 1. writable - if true - can be changed (otherwise read-only)
 // 2. enumerable - if true - can be iterated in loops 
 // 3. configurable - if true - the property can be deleted and atributes can be modified

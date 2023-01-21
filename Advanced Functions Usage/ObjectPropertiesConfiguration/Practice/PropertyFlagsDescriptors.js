@@ -42,7 +42,7 @@ Object.defineProperties(testingUser, {
     printInfo : {
         enumerable : false,
     }
-}); // assigning a decorator of an object
+}); // assigning a descriptor of an object
 
 descriptors = Object.getOwnPropertyDescriptors(testingUser);
 console.log(descriptors); // updated descriptors
